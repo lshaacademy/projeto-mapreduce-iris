@@ -34,7 +34,7 @@ O projeto consiste em um aplicação simples de mapreduce escrita em java para v
 
 
 
-# Execução ( Instalação do Hadoop 100% ok)
+# Sequência de Comandos ( Instalação do Hadoop 100% ok)
 
  - start-dfs.sh
  - start-yarn.sh
@@ -44,3 +44,6 @@ O projeto consiste em um aplicação simples de mapreduce escrita em java para v
  - yarn jar app-iris.jar  QuantidadeIrisSetosa /data-iris/input /data-iris/output
  - hdfs dfs -cat /data-iris/output/part-r-00000
  - Resultado: Iris-setosa	50
+ 
+ # Prints
+ https://github.com/lshaacademy/projeto-mapreduce-iris/blob/master/start-job.png
