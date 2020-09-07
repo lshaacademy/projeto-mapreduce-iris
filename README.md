@@ -1,6 +1,6 @@
 # projeto-mapreduce-iris
 # Trabalho de Pós Graduação Big Data e Ciência de Dados 
-# Disciplina Tecnlogias Avançadas
+# Disciplina Tecnologias Avançadas
 # Leonardo Souza
 
 Trabalho realizado utilizando o Ubuntu 20.4 em razão das dificuldades encontradas com o Hadoop da hortonworks como por exemplo, não existir mais a versão mencionada na disciplina, problemas com distribuição em que o hadoop simplesmente não existia, requisito de memória ram e outros.
