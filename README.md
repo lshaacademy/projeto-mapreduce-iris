@@ -29,6 +29,9 @@ Para proccessamento foi escolhido um dataset da flor de Íris que é disponibili
 # Projeto Mapreduce Flor de Íris
 O projeto consiste em um aplicação simples de mapreduce escrita em java para verificar em um dataset da flor iris qual a quantidade da espécie setosa levando em consideração que dentro deste mesmo dataset existe as espécies setosa, virginica e versicolor. A escrita do fonte mapreduce ocorreu no  Eclipse, projeto de maven, seguindo a apostila da própria disciplina.
 
+ - Raiz https://github.com/lshaacademy/projeto-mapreduce-iris
+ - Pasta com as classes mapreduce https://github.com/lshaacademy/projeto-mapreduce-iris/tree/master/iris/src/main/java/br/estacio/pos/uci/mapreduce/iris
+
 
 
 # Execução ( Instalação do Hadoop 100% ok)
