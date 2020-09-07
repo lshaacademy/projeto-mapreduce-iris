@@ -14,11 +14,13 @@ public class QuantidadeIrisSetosaMapper extends Mapper<LongWritable, Text,Text,I
 	public void map(LongWritable key, Text value, Context context)
 	throws IOException, InterruptedException{
 				
-		String[] instancia = value.toString().split(",");
+		String line = value.toString();
+		String[] instancia = line.split(",");
 		String nome_flor = instancia[instancia.length-1];
-		
-		if(nome_flor.trim().toUpperCase() == "IRIS-SETOSA") {
+				
+		if(nome_flor.equals("Iris-setosa") ) {
 			context.write(new Text(nome_flor), one);	
 		}					
+		
 	}
 }
