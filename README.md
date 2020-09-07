@@ -33,11 +33,11 @@ O projeto consiste em um aplicação simples de mapreduce escrita em java para v
 
 # Execução ( Instalação do Hadoop 100% ok)
 
- start-dfs.sh
- start-yarn.sh
- hdfs dfs -mkdir /data-iris/input
- hdfs dfs -ls /data-iris/
- hdfs dfs -put *.data /data-iris/input 
- yarn jar app-iris.jar  QuantidadeIrisSetosa /data-iris/input /data-iris/output
- hdfs dfs -cat /data-iris/output/part-r-00000
- Resultado: Iris-setosa	50
+ - start-dfs.sh
+ - start-yarn.sh
+ - hdfs dfs -mkdir /data-iris/input
+ - hdfs dfs -ls /data-iris/
+ - hdfs dfs -put *.data /data-iris/input 
+ - yarn jar app-iris.jar  QuantidadeIrisSetosa /data-iris/input /data-iris/output
+ - hdfs dfs -cat /data-iris/output/part-r-00000
+ - Resultado: Iris-setosa	50
