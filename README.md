@@ -46,8 +46,8 @@ O projeto consiste em um aplicação simples de mapreduce escrita em java para v
  - Resultado: Iris-setosa	50
  
  # Prints - Resumo da Sequência de comandos
- ![alt text](https://github.com/lshaacademy/projeto-mapreduce-iris/blob/master/area-trabalho.png)
  ![alt text](https://github.com/lshaacademy/projeto-mapreduce-iris/blob/master/start-job.png)
+ ![alt text](https://github.com/lshaacademy/projeto-mapreduce-iris/blob/master/area-trabalho.png) 
  ![alt text](https://github.com/lshaacademy/projeto-mapreduce-iris/blob/master/resultado.png)
 
  
