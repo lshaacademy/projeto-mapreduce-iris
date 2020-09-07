@@ -16,15 +16,14 @@ https://github.com/lshaacademy/hadoop-config-pseudo-distribuited-mode/tree/maste
 Obs 1.: Os arquivos de config representam resultado de algumas horas pesquisando sobre configuração do hadoop e estão na minha pasta pessoal no github. 
 
 Obs 2.:  Os arquivos de config do hadoop conforme citados acima e utilizados no projeto do trabalho resolvem problemas encontrados como por exemplo, a configuração
-do % de uso de CPU, quantidade máxima de memória ram e a correta configuração do classpath o YARN e sem essas configurações, o JOB é exibido no console como Running, mas na verdade não foi ativado no YARN.
+do % de uso de CPU, quantidade máxima de memória ram e a correta configuração do classpath no yarn-site.xml e sem essas configurações, o JOB é exibido no console como Running, mas na verdade não foi ativado.
 
 
-A escrita do fonte mapreduce em java ocorreu no Eclipse seguindo a apostila da própria disciplina e para execução do job foi escolhido um dataset da flor íris que é disponibilizado pela Universidade da Califórnia de Irvine. 
+A escrita do fonte mapreduce em java ocorreu no  Eclipse seguindo a apostila da própria disciplina e para execução do job foi escolhido um dataset da flor íris que é disponibilizado pela Universidade da Califórnia de Irvine.
+
+# Fonte do Projeto
+https://github.com/lshaacademy/projeto-mapreduce-iris/tree/master/iris
 
 
-# hadoop-config-pseudo-distribuited-mode
-
-
-
-
+# Dataset
 https://archive.ics.uci.edu/ml/datasets/iris
