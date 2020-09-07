@@ -10,7 +10,7 @@ O hadoop foi instalado e configurado no ubuntu, seguindo a documentação oficia
 
 Fonte: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
 
-# Hadoop - Arquivos de Configuração
+# Arquivos de Configuração
 Os arquivos de configuração do hadoop para operar em single node foram versionados e estão disponíveis na pasta:
 
 https://github.com/lshaacademy/hadoop-config-pseudo-distribuited-mode/tree/master/hadoop-config-files
@@ -20,13 +20,24 @@ Obs 1.: Os arquivos de config representam resultado de algumas horas pesquisando
 Obs 2.:  Os arquivos de config do hadoop conforme citados acima e utilizados no projeto do trabalho resolvem problemas encontrados como por exemplo, a configuração
 do % de uso de CPU, quantidade máxima de memória ram e a correta configuração do classpath no yarn-site.xml e sem essas configurações, o JOB é exibido no console como Running, mas na verdade não foi ativado.
 
-# Hadoop - Aplicação MapReduce
-A escrita do fonte mapreduce em java ocorreu no  Eclipse seguindo a apostila da própria disciplina e para execução do job foi escolhido um dataset da flor íris que é disponibilizado pela Universidade da Califórnia de Irvine.
-
-
-- https://github.com/lshaacademy/projeto-mapreduce-iris/tree/master/iris
-
-
 # Dataset
+Para proccessamento foi escolhido um dataset da flor de Íris que é disponibilizado pela Universidade da Califórnia de Irvine. Foi realizado o download do dataset que é consideravelmente pequeno e por esta razão foi versionado junto com o projeto conforme o link abaixo:
+
 - https://archive.ics.uci.edu/ml/datasets/iris
 - Pasta contendo o dataset https://github.com/lshaacademy/projeto-mapreduce-iris/tree/master/iris/data
+
+# Projeto Mapreduce Flor de Íris
+O projeto consiste em um aplicação simples de mapreduce escrita em java para verificar em um dataset da flor iris qual a quantidade da espécie setosa levando em consideração que dentro deste mesmo dataset existe as espécies setosa, virginica e versicolor. A escrita do fonte mapreduce ocorreu no  Eclipse, projeto de maven, seguindo a apostila da própria disciplina.
+
+
+
+# Execução ( Instalação do Hadoop 100% ok)
+
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ start-dfs.sh
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ start-yarn.sh
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ hdfs dfs -mkdir /data-iris/input
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ hdfs dfs -ls /data-iris/
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ hdfs dfs -put *.data /data-iris/input 
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ yarn jar app-iris.jar  QuantidadeIrisSetosa /data-iris/input /data-iris/output
+ hadoop@leo-PC:~/pos/tecnologias_avancadas$ hdfs dfs -cat /data-iris/output/part-r-00000
+ Iris-setosa	50
